@@ -88,8 +88,6 @@
                         <li class={{ Request::is('dashboard') ? 'active' : '' }}><a class="nav-link"
                                 href="{{ route('dashboard') }}"><i class="fas fa-home"></i><span>Dashboard</span></a>
                         </li>
-                        <li class={{ Request::is('tests') ? 'active' : '' }}><a class="nav-link"
-                                href="{{ route('tests.index') }}"><i class="fas fa-home"></i><span>Tests</span></a></li>
                     </ul>
                 </aside>
             </div>
@@ -100,7 +98,8 @@
             </div>
             <footer class="main-footer">
                 <div class="footer-left">
-                    Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="#">Pajar</a>
+                    Copyright &copy; {{ date('Y') }} <div class="bullet"></div> Design By <a
+                        href="#">Pajar</a>
                 </div>
                 <div class="footer-right">
 
